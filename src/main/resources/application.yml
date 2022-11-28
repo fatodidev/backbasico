@@ -1,0 +1,14 @@
+spring:
+  main:
+    allow-circular-references: true #Problemas con version a spring 2.6 se restablece el comportamiento de spring 2.5
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/Backbasico?createDatabaseIfNotExist=true
+    username : root
+    password: Ftd2104*
+server:
+  port: 8282
